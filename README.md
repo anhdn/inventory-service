@@ -34,7 +34,18 @@ Tracking collection data sample
 
 
 ## Folder Structure
-
+```
+.
+├── api
+├── config
+├── database.env
+├── docker-compose.yml
+├── node_modules
+├── package-lock.json
+├── package.json
+├── scripts
+└── test
+```
 Main directories:
 
 - api - for controllers, queries, mutations, models, types, services, etc.
@@ -42,6 +53,10 @@ Main directories:
 - db - this is only a directory for the sqlite database, the default for `NODE_ENV=development`
 - test - using [Jest](https://github.com/facebook/jest)
 - sevices
+
+### For Event Tracking We use AWS SQS 
+Checkout ```/api/services/tracking.sqs.service```
+
 
 ## Install and Use
 ```sh
@@ -52,7 +67,7 @@ $ npm install
 # Run app 
 $ npm start 
 ```
-
+ 
 ### other commands
 
 - `npm run dev` - for development
