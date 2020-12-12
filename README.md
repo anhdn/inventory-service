@@ -1,5 +1,7 @@
 # Inventory Service (iCommerce Project)
 
+https://github.com/anhdn/inventory-service
+
 An API for managing products built in Express GraphQL API with JWT Authentication and support for sqlite, mysql, and postgresql
 Using Amazon Simple Queue Service (SQS) to decouple and scale microservices, distributed systems, and serverless applications.
 
@@ -54,9 +56,8 @@ Main directories:
 - test - using [Jest](https://github.com/facebook/jest)
 - sevices
 
-### For Event Tracking We use AWS SQS 
+### Event Tracking uses AWS SQS 
 Checkout ```/api/services/tracking.sqs.service```
-
 
 ## Install and Use
 ```sh
@@ -67,6 +68,20 @@ $ npm install
 # Run app 
 $ npm start 
 ```
+
+## Tracking Service
+
+https://github.com/anhdn/tracking-service
+
+### Setup
+
+```
+npm install
+serverless deploy
+```
+
+## Usage
+In `handler.js` update the `mongoString` with your mongoDB url.
  
 ### other commands
 
