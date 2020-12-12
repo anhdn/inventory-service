@@ -69,6 +69,27 @@ $ npm install
 $ npm start 
 ```
 
+## Run tests
+```
+# Run unit tests 
+$ npm run test
+# only runs tests for using with ci tools 
+$ npm run test-ci
+```
+ 
+### other commands
+
+- `npm run dev` - for development
+- `npm run lint` - linting with eslint
+- `pretest` - runs linting before `npm test`
+- `test-ci` - only runs tests, nothing in pretest, nothing in posttest, for better use with ci tools
+
+### Postman API collection
+
+https://www.getpostman.com/collections/11005016854d0f3134cd
+
+
+
 ## Tracking Service
 
 https://github.com/anhdn/tracking-service
@@ -82,17 +103,6 @@ serverless deploy
 
 ## Usage
 In `handler.js` update the `mongoString` with your mongoDB url.
- 
-### other commands
-
-- `npm run dev` - for development
-- `npm run lint` - linting with eslint
-- `pretest` - runs linting before `npm test`
-- `test-ci` - only runs tests, nothing in pretest, nothing in posttest, for better use with ci tools
-
-### Postman API collection
-
-https://www.getpostman.com/collections/11005016854d0f3134cd
 
 
 ## LICENSE
