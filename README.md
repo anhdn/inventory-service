@@ -1,12 +1,29 @@
-# Inventory Service (iCommerce Project)
+# iCommerce Project
+## Use Case
+   
+   The sample application has two API services namely inventory-service and tracking-service. Each of the service has its own database PostgreSQL (inventory-service) and mongoDB (tracking-service) respectively. 
+   These are the repos of two services: 
+    <ol>
+        <li>
+            Inventory
+            https://github.com/anhdn/inventory-service
+        </li>
+        <li>Tracking
+            https://github.com/anhdn/tracking-service
+        </li>
+    </ol>
+    
+## Architecture
+![microservices](./readme/microservices-architecture.png)
 
-https://github.com/anhdn/inventory-service
+In this architecture, using Microservices Architecture on AWS.
 
-An API for managing products built in Express GraphQL API with JWT Authentication and support for sqlite, mysql, and postgresql
+## Inventory service
+
+This service is responsible for managing products built in Express GraphQL API with JWT Authentication and support for sqlite, mysql, and postgresql
 Using Amazon Simple Queue Service (SQS) to decouple and scale microservices, distributed systems, and serverless applications.
 
-
-## Getting started
+### Getting started
 
 This guide helps you set up this repo on development and run test.  
 
@@ -18,21 +35,8 @@ Stack:
 - Linting USing Eslint 
 - Integration tests running with Jest
 
-## Microservice architecture
-
-![microservices](./readme/microservices-architecture.png)
-
-In this architecture We use Microservices Architecture on AWS. Apply Design patterns of the Twelve-Factor App are leveraged for microservices.
-
-## ProductDB Diagram
-
+## InventoryDB Diagram
 ![microservices](./readme/product-service-schema.png)
-
-## TrackingDB Diagram
-![microservices](./readme/tracking-collection.png)
-
-Tracking collection data sample
-![microservices](./readme/tracking-collection-data.png)
 
 
 ## Folder Structure
@@ -54,7 +58,6 @@ Main directories:
 - config - for routes, database, etc.
 - db - this is only a directory for the sqlite database, the default for `NODE_ENV=development`
 - test - using [Jest](https://github.com/facebook/jest)
-- sevices
 
 ### Event Tracking uses AWS SQS 
 Checkout ```/api/services/tracking.sqs.service```
@@ -89,22 +92,10 @@ $ npm run test-ci
 https://www.getpostman.com/collections/11005016854d0f3134cd
 
 
-
 ## Tracking Service
-
 https://github.com/anhdn/tracking-service
 
-### Setup
-
-```
-npm install
-serverless deploy
-```
-
-## Usage
-In `handler.js` update the `mongoString` with your mongoDB url.
 
 
 ## LICENSE
-
 MIT © Anh Dang
