@@ -19,7 +19,6 @@
 In this architecture, using Microservices Architecture on AWS.
 
 ## Inventory service
-
 This service is responsible for managing products built in Express GraphQL API with JWT Authentication and support for sqlite, mysql, and postgresql
 Using Amazon Simple Queue Service (SQS) to decouple and scale microservices, distributed systems, and serverless applications.
 
@@ -37,7 +36,6 @@ Stack:
 
 ## InventoryDB Diagram
 ![microservices](./readme/product-service-schema.png)
-
 
 ## Folder Structure
 ```
@@ -73,13 +71,24 @@ $ npm start
 ```
 
 ## Run tests
+Jest test suit will connect to SQLite to run tests.
+
 ```
 # Run unit tests 
 $ npm run test
 # only runs tests for using with ci tools 
 $ npm run test-ci
 ```
- 
+These are results when I run tests
+
+![authMutation](./readme/tests/authMutation.png)
+![productMutation](./readme/tests/productMutation.png)
+![productQuery](./readme/tests/productQuery.png)
+![userMutation](./readme/tests/productMutation.png)
+![userQuery](./readme/tests/userQuery.png)
+![resultTest](./readme/tests/resultTests.png)
+
+
 ### other commands
 
 - `npm run dev` - for development
@@ -94,7 +103,6 @@ https://www.getpostman.com/collections/11005016854d0f3134cd
 
 ## Tracking Service
 https://github.com/anhdn/tracking-service
-
 
 
 ## LICENSE
