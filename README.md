@@ -72,7 +72,7 @@ $ npm start
 
 ## Run tests
 Jest test suit will connect to SQLite to run tests.
-
+Everytime we push code, this repo will force you pass all tests
 ```
 # Run unit tests 
 $ npm run test
