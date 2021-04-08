@@ -57,9 +57,6 @@ Main directories:
 - db - this is only a directory for the sqlite database, the default for `NODE_ENV=development`
 - test - using [Jest](https://github.com/facebook/jest)
 
-### Event Tracking uses AWS SQS 
-Checkout ```/api/services/tracking.sqs.service```
-
 ## Install and Use
 ```sh
 # start docker compose install postgresql database
@@ -69,7 +66,6 @@ $ npm install
 # Run app 
 $ npm start 
 ```
-
 ## Run tests
 Jest test suit will connect to SQLite to run tests.
 Everytime we push code, this repo will force you pass all tests
@@ -96,8 +92,7 @@ These are results when I run tests
 - `pretest` - runs linting before `npm test`
 - `test-ci` - only runs tests, nothing in pretest, nothing in posttest, for better use with ci tools
 
-### Postman API collection
-
+### Postman API collection - Inventory Service
 https://www.getpostman.com/collections/11005016854d0f3134cd
 
 
