@@ -83,7 +83,7 @@ These are results when I run tests
 
 ![authMutation](./readme/tests/authMutation.png)
 ![productMutation](./readme/tests/productMutation.png)
-![productQuery](./readme/tests/productQuery.png)
+![productQuery](./readme/tests/ProductQuery.png)
 ![userMutation](./readme/tests/productMutation.png)
 ![userQuery](./readme/tests/userQuery.png)
 ![resultTest](./readme/tests/resultTests.png)
