@@ -86,7 +86,7 @@ These are results when I run tests
 ![productQuery](./readme/tests/ProductQuery.png)
 ![userMutation](./readme/tests/productMutation.png)
 ![userQuery](./readme/tests/userQuery.png)
-![resultTest](./readme/tests/resultTests.png)
+![resultTest](./readme/tests/ResultTests.png)
 
 
 ### other commands
